@@ -18,7 +18,7 @@
       transparent 4px
     ),
     linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
-  --block__width: clamp(375px, 30.4vw + 260.8px, 700px);
+  --block__width: clamp(375px, round(nearest, 260.56px + 30.52vw, 1px), 700px);
   --block__height: clamp(327px, 3.85vw + 312.56px, 368px);
   --text__stroke_color: #fff;
   --accent__color: #000;
@@ -27,7 +27,7 @@
   --contour__color: #000;
   --animation__fill_color: red;
   --transition__heart: 0.3s linear;
-  --border: solid 2px #000;
+  --border: solid 2px var(--accent__color);
 }
 
 .card__title {

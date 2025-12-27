@@ -37,7 +37,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  outline: solid 2px var(--accent__color);
+  outline: var(--border);
+  box-sizing: border-box;
 }
 
 .header__block {
@@ -180,15 +181,13 @@
 
 .button__container {
   padding: 0;
-  width: 160px;
   margin-inline-end: 25px;
-  margin-block-end: 23px;
+  margin-block-end: 25px;
   box-sizing: border-box;
   align-self: flex-end;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 7px;
 }
 
 .button {
@@ -204,6 +203,7 @@
   isolation: isolate;
   text-decoration: none;
   transition: box-shadow 0.3s ease;
+  color: var(--button__text_color);
 }
 
 .button__heart {
@@ -213,9 +213,11 @@
   position: static;
   display: block;
   width: 38px;
+  height: 38px;
   border-color: transparent;
   box-sizing: border-box;
   background-color: transparent;
+  margin-inline-end: 7px;
   transition: 0.3s ease;
 }
 
@@ -335,6 +337,7 @@ form {
 }
 
 @media (width <= 375px) {
+
   .header {
     outline: none;
     border: var(--border);
