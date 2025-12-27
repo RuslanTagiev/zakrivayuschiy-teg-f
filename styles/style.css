@@ -136,35 +136,35 @@
 }
 
 .img__go {
-  filter: opacity(50%);
+  filter: contrast(120%);
 }
 
 .img__fear {
-  filter: contrast(200%);
+  filter: opacity(70%);
 }
 
 .img__i_can {
-  filter: saturate(20%);
+  filter: invert(200%) blur(3px);
 }
 
 .img__repeat {
-  filter: invert(30%);
+  filter: saturate(120%);
 }
 
 .img__together {
-  filter: grayscale(40%);
+  filter: brightness(70%);
 }
 
 .img__attention {
-  filter: brightness(200%);
+  filter: grayscale(50%);
 }
 
 .img__work {
-  filter: blur(10px);
+  filter: saturate(200%);
 }
 
 .img__long_way {
-  filter: sepia(10%) saturate(200%);
+  filter: sepia(50%);
 }
 
 .card__text_block {
@@ -307,7 +307,6 @@
   font-family: var(--Press__start_2P);
   font-size: 14px;
   padding: 0;
-  box-sizing: border-box;
   color: var(--button__text_color);
   fill: var(--background__color);
   mix-blend-mode: difference;
@@ -408,12 +407,12 @@ form {
 
 .button__heart:focus {
   outline: none;
-    box-shadow: none;
+  box-shadow: none;
 }
 
 .button__heart:focus-visible {
   border: var(--border);
-    box-shadow: none;
+  box-shadow: none;
 }
 
 .sparks {
