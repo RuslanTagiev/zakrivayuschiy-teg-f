@@ -11,7 +11,7 @@
 :root {
   margin: 0 auto;
   max-inline-size: 1440px;
-  width: round(nearest, clamp(375px, 100vw, 1440px), 1px);
+  inline-size: 100%;
 }
 
 body {
